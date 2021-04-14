@@ -177,7 +177,7 @@ async def _(event):
 # Tuan User
 # Tuan User
 CMD_HELP.update({
-    "poconganimasi":
+    "zhieanimasi":
     "`.nah` ; `.huh` ; `.owner`\
     \nUsage: cobain.\
     \n\n`.bunga` ; `.buah`\

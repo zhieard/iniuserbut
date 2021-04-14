@@ -50,7 +50,7 @@ async def _(event):
 # Ported For Tuan-Userbot By bismillahselaluadaa/ILham
 
 CMD_HELP.update({
-    "pocongfun": "\
+    "zhiefun": "\
 `.xogame`\
 \nUsage: Mainkan game XO bersama temanmu.\
 \n\n`.mod <nama app>`\

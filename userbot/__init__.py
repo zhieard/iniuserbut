@@ -94,10 +94,10 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN") or None
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = (os.environ.get("UPSTREAM_REPO_URL")
-                     or "https://github.com/poocong/Pocong-Userbot")
+                     or "https://github.com/zhieard/iniuserbut")
 
 # UPSTREAM_REPO_URL branch, the default is master
-UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "pocong"
+UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "main"
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get(
@@ -173,7 +173,7 @@ TEMP_DOWNLOAD_DIRECTORY = os.environ.get(
     "TMP_DOWNLOAD_DIRECTORY") or "./downloads"
 
 # Terminal Alias
-TERM_ALIAS = os.environ.get("TERM_ALIAS") or "Pocong Userbot"
+TERM_ALIAS = os.environ.get("TERM_ALIAS") or "Zhie Userbot"
 
 # Genius Lyrics API
 GENIUS = os.environ.get("GENIUS_ACCESS_TOKEN") or None
@@ -254,7 +254,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "**POCONG USERBOT › BERHASIL DIAKTIFKAN**")
+    await bot.send_message(BOTLOG_CHATID, "**Zhie USERBOT › BERHASIL DIAKTIFKAN**")
     return
 
 with bot:
@@ -312,7 +312,7 @@ with bot:
         async def handler(event):
             if event.message.from_id != uid:
                 await event.reply(
-                    "Saya [Pocong Userbot](https://github.com/poocong/Pocong-Userbot)...\ntolong buat bot Anda sendiri, jangan gunakan bot saya"
+                    "Saya [Zhie Userbot](https://github.com/zhieard/iniuserbot)...\ntolong buat bot Anda sendiri, jangan gunakan bot saya"
                 )
             else:
                 await event.reply(f"`Hai Saya {ALIVE_NAME}\n\n yang selalu siap melayanimu`")
@@ -327,7 +327,7 @@ with bot:
                 result = builder.article(
                     "Harap Gunakan Perintah .help Untuk Melihat Daftar Plugins!",
                     text="{}\nTotal modul yang dimuat: {}".format(
-                        "[Pocong Userbot](https://github.com/poocong/Pocong-Userbot) plugins.\n",
+                        "[Zhie Userbot](https://github.com/zhieard/iniuserbot) plugins.\n",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -335,20 +335,20 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Pocong Helper",
+                    "Zhie Helper",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True,
                 )
             else:
                 result = builder.article(
-                    "Pocong Userbot",
+                    "Zhie Userbot",
                     text="""Anda dapat mengubah akun Anda menjadi bot dan menggunakannya. Ingat, Anda tidak dapat mengelola bot orang lain! Semua detail instalasi dijelaskan dari alamat GitHub di bawah ini.""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "GitHub Repo",
-                                "https://github.com/poocong/Pocong-Userbot",
+                                "https://github.com/zhieard/iniuserbot",
                             ),
                             custom.Button.url(
                                 "Support",

@@ -30,7 +30,7 @@ for module_name in ALL_MODULES:
 
 
 LOGS.info(
-    "📍 POCONG - USERBOT 📍 [SUCCESFULL ACTIVATED!]")
+    "📍 Zhie - USERBOT 📍 [SUCCESFULL ACTIVATED!]")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
